@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Verification | Ezgi Karacay</title>
+    <style>
+        :root {
+            --primary-blue: #2563eb;
+            --success-green: #059669;
+            --text-dark: #111827;
+            --text-gray: #4b5563;
+            --bg-light: #f9fafb;
+            --border: #e5e7eb;
+            --share-bg: #eff6ff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .thank-you-header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--bg-light);
+            border-radius: 12px;
+            margin-bottom: 40px;
+            border: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: var(--primary-blue);
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: var(--success-green);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .initiative-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .detail-card {
+            padding: 20px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        .detail-card h3 {
+            margin-top: 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: var(--text-gray);
+            letter-spacing: 0.5px;
+        }
+
+        .detail-value {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .transparency-note {
+            background-color: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin-bottom: 40px;
+            font-size: 15px;
+        }
+
+        .charity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .charity-tag {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 12px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .share-section {
+            background-color: var(--share-bg);
+            border: 1px solid #bfdbfe;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .qr-code-container {
+            margin: 20px auto;
+            background: white;
+            padding: 15px;
+            display: inline-block;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .qr-code-container img {
+            display: block;
+            width: 150px;
+            height: 150px;
+        }
+
+        .share-link-box {
+            background: white;
+            padding: 12px;
+            border: 1px dotted var(--primary-blue);
+            border-radius: 6px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 14px;
+            margin: 15px 0;
+            word-break: break-all;
+            color: var(--primary-blue);
+        }
+
+        .verification-placeholder {
+            margin-top: 40px;
+            padding: 40px;
+            border: 2px dashed var(--border);
+            border-radius: 8px;
+            text-align: center;
+            color: var(--text-gray);
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-gray);
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .initiative-details { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="thank-you-header">
+            <div class="status-badge">Project Active</div>
+            <h1>Herzlichen Dank!</h1>
+            <p style="font-size: 18px; color: var(--text-gray);">
+                Thank you for completing the survey. Your participation provides vital data for my Bachelor's Thesis and directly contributes to a charitable cause.
+            </p>
+        </div>
+
+        <main>
+            <div class="initiative-details">
+                <div class="detail-card">
+                    <h3>Donation Budget Cap</h3>
+                    <div class="detail-value">€200.00 Total</div>
+                    <p style="font-size: 13px; color: var(--text-gray); margin-bottom: 0;">
+                        The survey will automatically close once this limit is reached. If you were able to submit, your donation is secured.
+                    </p>
+                </div>
+                <div class="detail-card">
+                    <h3>Final Deadline</h3>
+                    <div class="detail-value">Wednesday, March 11th</div>
+                    <p style="font-size: 13px; color: var(--text-gray); margin-bottom: 0;">
+                        Collection ends at 23:59 CET. All donations will be processed immediately following this date.
+                    </p>
+                </div>
+            </div>
+
+            <div class="transparency-note">
+                <strong>Why this page exists:</strong> To ensure full transparency, I have created this hub to host the official donation receipts from <strong>Betterplace.org</strong>. Contributions of €2.00 per response are directed to:
+                <div class="charity-grid">
+                    <div class="charity-tag">Ärzte ohne Grenzen</div>
+                    <div class="charity-tag">WWF Deutschland</div>
+                    <div class="charity-tag">Tafel Deutschland</div>
+                    <div class="charity-tag">Deutsches Kinderhilfswerk</div>
+                </div>
+            </div>
+
+            <div class="share-section">
+                <h3 style="margin: 0; color: var(--primary-blue); font-size: 20px;">Share the Research</h3>
+                <p style="font-size: 15px; margin: 10px 0;">If your colleagues or network would like to participate, they can scan the code below or use the direct link.</p>
+                
+                <div class="qr-code-container">
+                    <!-- QR Code API generating code for your specific Google Form link -->
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://forms.gle/KNiKjF4p6kmoLfB49" alt="Survey QR Code">
+                </div>
+
+                <div class="share-link-box">
+                    https://forms.gle/KNiKjF4p6kmoLfB49
+                </div>
+                <p style="font-size: 12px; color: var(--text-gray);">Scan or share. Link active until March 11th or budget cap is met.</p>
+            </div>
+
+            <div class="verification-placeholder">
+                <h3 style="color: var(--text-dark);">Official Receipts Pending</h3>
+                <p>Digital receipts (Spendenbescheinigungen) will be uploaded here as a consolidated PDF once the data collection period ends.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Bachelor's Thesis Research | Ezgi Karacay | 2026</p>
+        </footer>
+    </div>
+
+</body>
+</html>
